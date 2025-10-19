@@ -76,12 +76,12 @@ main {
   width: 100%;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40% 1fr 1fr;
+  grid-template-areas: "works works works" "first first first" "second third third";
 }
 main .works {
-  grid-column: 1/4;
-  grid-row: 1/2;
+  grid-area: works;
   display: grid;
   grid-template-columns: 1fr 0.8fr 1fr;
   grid-template-rows: 1fr;
@@ -98,7 +98,6 @@ main .works .fistwork {
 }
 main .works .fistwork .box {
   width: 100%;
-  height: 50%;
   border: 1px solid rgb(29, 29, 27);
   overflow: hidden;
 }
@@ -201,12 +200,12 @@ main .works .scondwork {
 }
 main .works .scondwork .box {
   width: 100%;
-  height: 100%;
   border: 1px solid rgb(29, 29, 27);
   overflow: hidden;
 }
 main .works .scondwork .box img {
   width: 100%;
+  height: 100%;
   transition: all 0.3s ease-in-out;
 }
 main .works .scondwork .box img:hover {
@@ -235,12 +234,80 @@ main .works .scondwork p {
   font-size: 1.2rem;
 }
 main .first {
+  grid-area: first;
+}
+main .first h1 {
   font-family: canopee;
-  font-size: 35.5vw;
+  font-size: 35vw;
   letter-spacing: -1.5vw;
   line-height: 0.75;
   background-color: rgb(29, 29, 27);
   color: rgb(205, 198, 190);
-  padding: 3vw 3vw 0vw 1vw;
+  padding: 3vw 1vw 0vw 2vw;
   margin-top: 4rem;
+}
+main .second {
+  grid-area: second;
+  padding-right: 2rem;
+  margin-top: 3rem;
+  border-right: 1px solid rgb(29, 29, 27);
+}
+main .second h3 {
+  font-family: canopee;
+  font-size: 8vw;
+  color: rgb(29, 29, 27);
+  font-weight: 200;
+  letter-spacing: -0.3vw;
+  margin: -5vw 0 -2vw 0;
+}
+main .second h3 span {
+  font-family: spam;
+  font-size: 11vw;
+}
+main .second h1 {
+  font-family: canopee;
+  font-size: 14vw;
+  color: rgb(29, 29, 27);
+  font-weight: 500;
+  line-height: -0.5;
+  letter-spacing: -0.8vw;
+  margin: -4vw 0 -2vw 0;
+}
+main .second img {
+  width: 100%;
+  border: 1px solid rgb(29, 29, 27);
+}
+main .second .info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+main .second .info span {
+  font-family: canopee;
+  font-weight: 500;
+  font-size: 8rem;
+  margin: 0;
+  color: rgb(205, 198, 190);
+  background-color: black;
+  line-height: 0.8;
+  padding: 0.5rem 0.2rem 0rem 0.2rem;
+}
+main .second .info p {
+  font-family: paper200;
+  font-size: 2rem;
+}
+main .second p {
+  font-family: paper200;
+  font-size: 2rem;
+}
+main .third {
+  grid-area: third;
+  background-color: rgb(205, 198, 190);
+}
+main .third img {
+  display: none;
+}
+main .third h3 {
+  font-family: canopee;
 }/*# sourceMappingURL=style.css.map */
