@@ -84,10 +84,11 @@ main{
   display: grid;
   // gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 1fr 1fr;
+  grid-template-rows: 40% 1fr 1fr 1fr;
   grid-template-areas: "works works works" 
                        "first first first" 
-                       "second third third";
+                       "second third third"
+                       "forth forth forth";
 
   .works{
     grid-area: works;
@@ -258,6 +259,7 @@ main{
       color: rgb(205, 198, 190);
       padding: 3vw 1vw 0vw 2vw;
       margin-top: 4rem;
+      font-weight: 100;
     }
   }
   .second{
@@ -319,11 +321,45 @@ main{
   .third{
     grid-area: third;
     background-color: rgb(205, 198, 190);
+    margin-left: 2rem;
+    margin-top: 3rem;
     img{
-      display: none;
+      width: 100%;
+      margin-bottom: 2rem;
+      border: 1px solid rgb(29, 29, 27);
     }
     h3{
       font-family: canopee;
+      font-size: 8.5vw;
+      line-height: 0.8;
+      letter-spacing: -0.4rem;
+      font-weight: 100;
+      color: rgb(29, 29, 27);
+      span{
+        font-family: spam;
+      }
+    }
+  }
+  .forth{
+    grid-area: forth;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    h1{
+      font-family: canopee;
+      font-size: 29.5vw;
+      letter-spacing: -1.5vw;
+      line-height: 0.75;
+      background-color: rgb(29, 29, 27);
+      color: rgb(205, 198, 190);
+      padding: 3vw 2vw 0vw 0.5vw;
+      font-weight: 100;
+    }
+    img{
+      width: 100%;
     }
   }
 }
