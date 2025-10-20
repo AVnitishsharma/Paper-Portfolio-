@@ -77,8 +77,8 @@ main {
   padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 1fr 1fr 1fr 1fr;
-  grid-template-areas: "works works works" "first first first" "second third third" "forth forth forth" "fifth fifth sixth";
+  grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "works works works" "first first first" "second third third" "forth forth forth" "fifth fifth sixth" "seventh seventh seventh";
 }
 main .works {
   grid-area: works;
@@ -508,4 +508,38 @@ main .sixth .box:hover h1 {
 }
 main .sixth .box:hover img {
   left: 20%;
+}
+main .seventh {
+  grid-area: seventh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid rgb(29, 29, 27);
+  border-bottom: 1px solid rgb(29, 29, 27);
+}
+main .seventh .boxfirst, main .seventh .boxsecond, main .seventh .boxthird, main .seventh .boxfourth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .seventh .boxfirst .text, main .seventh .boxsecond .text, main .seventh .boxthird .text, main .seventh .boxfourth .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .seventh .boxfirst .text p, main .seventh .boxsecond .text p, main .seventh .boxthird .text p, main .seventh .boxfourth .text p {
+  font-family: paper200;
+  font-size: 1.5rem;
+}
+main .seventh .boxfirst .text h1, main .seventh .boxsecond .text h1, main .seventh .boxthird .text h1, main .seventh .boxfourth .text h1 {
+  font-family: canopee;
+  font-size: 4rem;
+  font-weight: 100;
+}
+main .seventh .boxfirst h1, main .seventh .boxsecond h1, main .seventh .boxthird h1, main .seventh .boxfourth h1 {
+  font-family: paper800;
+  font-size: 9.5rem;
+  font-weight: 100;
 }/*# sourceMappingURL=style.css.map */
