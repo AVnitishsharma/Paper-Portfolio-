@@ -421,4 +421,91 @@ main .fifth .text .box2 p {
 main .fifth img {
   width: 100%;
   border: 1px solid rgb(29, 29, 27);
+}
+main .sixth {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  grid-area: sixth;
+  border-left: 1px solid rgb(29, 29, 27);
+}
+main .sixth h3 {
+  font-size: 7.8vw;
+  font-family: canopee;
+  font-weight: 100;
+  letter-spacing: -0.3rem;
+}
+main .sixth h3 span {
+  font-family: spam;
+}
+main .sixth h1 {
+  font-family: canopee;
+  font-weight: 100;
+  font-size: 13vw;
+  letter-spacing: -0.3rem;
+  line-height: 0.6;
+}
+main .sixth .info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+main .sixth .info span {
+  font-family: canopee;
+  font-weight: 500;
+  font-size: 8rem;
+  color: rgb(205, 198, 190);
+  background-color: black;
+  line-height: 0.8;
+  padding: 0.5rem 0.2rem 0rem 0.2rem;
+}
+main .sixth .info p {
+  font-family: paper200;
+  font-size: 2rem;
+}
+main .sixth P1 {
+  font-family: paper200;
+  font-size: 2rem;
+}
+main .sixth > p {
+  font-family: paper200;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+main .sixth .box {
+  width: 100%;
+  height: 20%;
+  border: 1px solid rgb(29, 29, 27);
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(212, 207, 202);
+}
+main .sixth .box h1 {
+  font-size: 6vw;
+  font-family: canopee;
+  font-weight: 100;
+  letter-spacing: -0.3rem;
+  position: absolute;
+  left: 20%;
+  transition: all 0.3s ease-in-out;
+}
+main .sixth .box h1 span {
+  font-family: spam;
+}
+main .sixth .box img {
+  width: 50%;
+  position: absolute;
+  left: -50%;
+  transition: all 0.3s ease-in-out;
+}
+main .sixth .box:hover h1 {
+  left: 100%;
+}
+main .sixth .box:hover img {
+  left: 20%;
 }/*# sourceMappingURL=style.css.map */

@@ -89,7 +89,8 @@ main{
                        "first first first" 
                        "second third third"
                        "forth forth forth"
-                       "fifth fifth sixth";
+                       "fifth fifth sixth"
+                       ;
 
   .works{
     grid-area: works;
@@ -441,4 +442,96 @@ main{
       border: 1px solid rgb(29, 29, 27);
     }
   }
+  .sixth{
+    margin-top: 1rem;
+    padding-left: 2rem;
+    grid-area: sixth;
+    border-left: 1px solid rgb(29, 29, 27);
+    h3{
+      font-size: 7.8vw;
+      font-family: canopee;
+      font-weight: 100;
+      letter-spacing: -0.3rem;
+      span{
+        font-family: spam;
+      }
+    }
+    h1{
+      font-family: canopee;
+      font-weight: 100;
+      font-size: 13vw;
+      letter-spacing: -0.3rem;
+      line-height:0.6;
+    }
+    .info{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+      span{
+        font-family: canopee;
+        font-weight: 500;
+        font-size: 8rem;
+        // margin-top: -3rem;
+        color: rgb(205, 198, 190);
+        background-color: black;
+        line-height: 0.8;
+        padding: 0.5rem 0.2rem 0rem 0.2rem;
+      }
+      p{
+        font-family: paper200;
+        font-size: 2rem;
+        
+      }
+    }
+    P1{
+      font-family: paper200;
+      font-size: 2rem;
+    }
+    & > p{
+      font-family: paper200;
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .box{
+      width: 100%;
+      height: 20%;
+      border: 1px solid rgb(29, 29, 27);
+      position: relative;
+      margin-top: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: rgb(212, 207, 202);
+      h1{
+        font-size: 6vw;
+        font-family: canopee;
+        font-weight: 100;
+        letter-spacing: -0.3rem;
+        position: absolute;
+        left: 20%;
+        transition: all 0.3s ease-in-out;
+        span{
+          font-family: spam;
+        }
+      }
+      img{
+        width: 50%;
+        position: absolute;
+        left: -50%;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover{
+        h1{
+          left: 100%;
+        }
+        img{
+          left: 20%;
+        }
+      }
+    }
+  }
+  
 }
