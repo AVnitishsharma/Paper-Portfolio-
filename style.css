@@ -77,8 +77,8 @@ main {
   padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "works works works" "first first first" "second third third" "forth forth forth" "fifth fifth sixth" "seventh seventh seventh";
+  grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "works works works" "first first first" "second third third" "forth forth forth" "fifth fifth sixth" "seventh seventh seventh" "eight eight eight";
 }
 main .works {
   grid-area: works;
@@ -542,4 +542,63 @@ main .seventh .boxfirst h1, main .seventh .boxsecond h1, main .seventh .boxthird
   font-family: paper800;
   font-size: 9.5rem;
   font-weight: 100;
+}
+main .eight {
+  grid-area: eight;
+  margin-top: 3rem;
+}
+main .eight .box1 {
+  display: flex;
+  flex-direction: row;
+  height: 45%;
+}
+main .eight .box1 .text {
+  display: flex;
+  width: 50%;
+}
+main .eight .box1 .text img {
+  height: 45%;
+  border: 1px solid rgb(29, 29, 27);
+}
+main .eight .box1 .text h1 {
+  font-family: canopee;
+  font-size: 30vw;
+  font-weight: 100;
+  line-height: 0.8;
+  letter-spacing: -0.7rem;
+  display: block;
+  margin-left: 2vw;
+}
+main .eight .box1 .text h1 span {
+  font-family: canopee;
+  margin-left: -14.5vw;
+  letter-spacing: -1rem;
+}
+main .eight .box1 .img {
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgb(29, 29, 27);
+}
+main .eight .box1 .img img {
+  width: 100%;
+}
+main .eight .box2 {
+  display: flex;
+  flex-direction: row;
+}
+main .eight .box2 img {
+  width: 23.5%;
+  height: 20%;
+  aspect-ratio: 1/1;
+  border: 1px solid rgb(29, 29, 27);
+}
+main .eight .box2 h1 {
+  font-family: canopee;
+  font-size: 32vw;
+  font-weight: 500;
+  line-height: 0.65;
+  letter-spacing: -1.3rem;
+}
+main .eight .box2 h1 span {
+  font-family: spam;
 }/*# sourceMappingURL=style.css.map */
