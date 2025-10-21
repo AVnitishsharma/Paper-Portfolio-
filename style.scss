@@ -84,14 +84,15 @@ main{
   display: grid;
   // gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "works works works" 
                        "first first first" 
                        "second third third"
                        "forth forth forth"
                        "fifth fifth sixth"
                        "seventh seventh seventh"
-                       "eight eight eight";
+                       "eight eight eight"
+                       "nineth nineth nineth";
 
   .works{
     grid-area: works;
@@ -663,6 +664,90 @@ main{
           font-size: 2rem;
         }
       }
+    }
+  }
+  .nineth{
+    grid-area: nineth;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    .box1, .box2, .box3, .box4{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      gap: 3rem;
+      border: 3px solid rgb(29, 29, 27);
+      outline: 2px dashed rgb(0, 0, 0);
+      outline-offset: -12px;
+      border-radius: 1rem;
+      box-shadow: 5px 5px 20px rgb(29, 29, 27);
+      padding: 2rem;
+      position: absolute;
+      width: 40%;
+      background-color: rgb(212, 207, 202);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      scrollbar-width: none;
+    
+      p{
+        font-family: paper200;
+        font-size: 2rem;
+      }
+      .info{
+        display: flex;
+        flex-direction: column;
+        h1{
+          font-family: canopee;
+          font-size: 3rem;
+          font-weight: 100;
+        }
+        p{
+          font-family: paper200;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .box1{
+      left: 0;
+      top: 0;
+      z-index: 2;
+      &:hover ~ .box2{
+        left: 37%;
+      }
+      &:hover ~ .box3{
+        left: 57%;
+      }
+      &:hover ~ .box4{
+        left: 77%;
+      }
+    }
+    .box2{
+      left: 20%;
+      top: 0;
+      z-index: 3;
+      &:hover ~ .box3{
+        left: 57%;
+      }
+      &:hover ~ .box4{
+        left: 77%;
+      }
+    }
+    .box3{
+      left: 40%;
+      top: 0;
+      z-index: 4;
+      &:hover ~ .box4{
+        left: 77%;
+      }
+    }
+    .box4{
+      left: 60%;
+      top: 0;
+      z-index: 5;
     }
   }
 }
