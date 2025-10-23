@@ -30,7 +30,9 @@ html, body {
   padding: 0;
   background-color: rgb(205, 198, 190);
 }
-
+html{
+  font-size: clamp(7px, 1.5vw, 18px);
+}
 nav{
   display: flex;
   justify-content: space-between;
@@ -38,7 +40,7 @@ nav{
   height: clamp(10px, 10vh, 100px);
   padding: 0 2rem;
   border-bottom: 2px solid rgb(29, 29, 27);
-
+  width: 100%;
   .nl{
     font-family: paper200;
     font-weight: 200;
@@ -82,7 +84,6 @@ main{
   width: 100%;
   padding: 0 2rem;
   display: grid;
-  // gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "works works works" 
@@ -971,6 +972,34 @@ main{
         font-weight: 100;
         font-size: 1.5rem;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main{
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "works"
+                         "first"
+                         "third"
+                         "second"
+                         
+                         "forth"
+                         "fifth"
+                         "sixth"
+                         "seventh"
+                         "eight"
+                         "nineth"
+                         "works2"
+                         "email"
+                         "footer";
+
+    .works{
+     display: none;
+    }
+    .first{
+      margin-top: 2rem;
     }
   }
 }

@@ -29,6 +29,10 @@ html, body {
   background-color: rgb(205, 198, 190);
 }
 
+html {
+  font-size: clamp(7px, 1.5vw, 18px);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,6 +40,7 @@ nav {
   height: clamp(10px, 10vh, 100px);
   padding: 0 2rem;
   border-bottom: 2px solid rgb(29, 29, 27);
+  width: 100%;
 }
 nav .nl {
   font-family: paper200;
@@ -932,4 +937,18 @@ main .footer ul li {
   font-family: canopee;
   font-weight: 100;
   font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "works" "first" "third" "second" "forth" "fifth" "sixth" "seventh" "eight" "nineth" "works2" "email" "footer";
+  }
+  main .works {
+    display: none;
+  }
+  main .first {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
