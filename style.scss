@@ -31,7 +31,7 @@ html, body {
   background-color: rgb(205, 198, 190);
 }
 html{
-  font-size: clamp(7px, 1.5vw, 18px);
+  font-size: clamp(7px, 1vw, 18px);
 }
 nav{
   display: flex;
@@ -258,6 +258,7 @@ main{
 
   .first{
     grid-area: first;
+    margin-top: 4rem;
     h1{
       font-family: canopee;
       font-size: 35vw;
@@ -266,8 +267,8 @@ main{
       background-color: rgb(29, 29, 27);
       color: rgb(205, 198, 190);
       padding: 3vw 1vw 0vw 2vw;
-      margin-top: 4rem;
       font-weight: 100;
+
     }
   }
   .second{
@@ -285,7 +286,6 @@ main{
       margin: -5vw 0 -2vw 0;
       span{
         font-family: spam;
-        font-size: 11vw;
       }
     }
     h1{
@@ -338,7 +338,7 @@ main{
     }
     h3{
       font-family: canopee;
-      font-size: 8.5vw;
+      font-size: clamp(7rem, 8.5vw, 10rem);
       line-height: 0.8;
       letter-spacing: -0.4rem;
       font-weight: 100;
@@ -569,7 +569,7 @@ main{
       }
       h1{
         font-family: paper800;
-        font-size: 9.5rem;
+        font-size: 9.5vw;
         font-weight: 100;
       }
     }
@@ -984,7 +984,6 @@ main{
                          "first"
                          "third"
                          "second"
-                         
                          "forth"
                          "fifth"
                          "sixth"
@@ -1000,6 +999,58 @@ main{
     }
     .first{
       margin-top: 2rem;
+      width: 100%;
+      h1{
+        margin-right: 3rem;
+      }
+    }
+    .second{
+      border-bottom: 1px solid rgb(29, 29, 27);
+      border-right: none;
+      h3{
+        font-size: clamp(15rem, 25vw, 35rem);
+      }
+      h1{
+        font-size: clamp(25rem, 40vw, 55rem);
+        margin:-5rem 0;
+      }
+      .info{
+        p{
+          font-size: 2.8rem;
+        }
+      }
+      P{
+        font-size: 2.8rem;
+      }
+    }
+    .third{
+      margin-left: 0;
+      img{
+        width: 95%;
+      }
+      h3{
+        font-size: clamp(7rem, 13vw, 10rem);
+      }
+    }
+    .forth{
+      display: none;
+    }
+    .fifth{
+      .text{
+        flex-direction: column;
+        .box1, .box2{
+          width: 100%;
+        }
+      }
+      &>img{
+        display: none;
+      }
+    }
+    .sixth{
+      display: none;
+    }
+    .seventh{
+      display: none;
     }
   }
 }

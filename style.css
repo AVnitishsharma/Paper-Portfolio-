@@ -30,7 +30,7 @@ html, body {
 }
 
 html {
-  font-size: clamp(7px, 1.5vw, 18px);
+  font-size: clamp(7px, 1vw, 18px);
 }
 
 nav {
@@ -240,6 +240,7 @@ main .works .scondwork p {
 }
 main .first {
   grid-area: first;
+  margin-top: 4rem;
 }
 main .first h1 {
   font-family: canopee;
@@ -249,7 +250,6 @@ main .first h1 {
   background-color: rgb(29, 29, 27);
   color: rgb(205, 198, 190);
   padding: 3vw 1vw 0vw 2vw;
-  margin-top: 4rem;
   font-weight: 100;
 }
 main .second {
@@ -268,7 +268,6 @@ main .second h3 {
 }
 main .second h3 span {
   font-family: spam;
-  font-size: 11vw;
 }
 main .second h1 {
   font-family: canopee;
@@ -320,7 +319,7 @@ main .third img {
 }
 main .third h3 {
   font-family: canopee;
-  font-size: 8.5vw;
+  font-size: clamp(7rem, 8.5vw, 10rem);
   line-height: 0.8;
   letter-spacing: -0.4rem;
   font-weight: 100;
@@ -545,7 +544,7 @@ main .seventh .boxfirst .text h1, main .seventh .boxsecond .text h1, main .seven
 }
 main .seventh .boxfirst h1, main .seventh .boxsecond h1, main .seventh .boxthird h1, main .seventh .boxfourth h1 {
   font-family: paper800;
-  font-size: 9.5rem;
+  font-size: 9.5vw;
   font-weight: 100;
 }
 main .eight {
@@ -950,5 +949,53 @@ main .footer ul li {
   }
   main .first {
     margin-top: 2rem;
+    width: 100%;
+  }
+  main .first h1 {
+    margin-right: 3rem;
+  }
+  main .second {
+    border-bottom: 1px solid rgb(29, 29, 27);
+    border-right: none;
+  }
+  main .second h3 {
+    font-size: clamp(15rem, 25vw, 35rem);
+  }
+  main .second h1 {
+    font-size: clamp(25rem, 40vw, 55rem);
+    margin: -5rem 0;
+  }
+  main .second .info p {
+    font-size: 2.8rem;
+  }
+  main .second P {
+    font-size: 2.8rem;
+  }
+  main .third {
+    margin-left: 0;
+  }
+  main .third img {
+    width: 95%;
+  }
+  main .third h3 {
+    font-size: clamp(7rem, 13vw, 10rem);
+  }
+  main .forth {
+    display: none;
+  }
+  main .fifth .text {
+    flex-direction: column;
+  }
+  main .fifth .text .box1, main .fifth .text .box2 {
+    width: 100%;
+  }
+  main .fifth > img {
+    display: none;
+  }
+  main .sixth {
+    display: none;
+  }
+  main .seventh {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
