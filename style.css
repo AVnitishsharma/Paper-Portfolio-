@@ -973,6 +973,7 @@ main .footer ul li {
   }
   main .third {
     margin-left: 0;
+    padding-bottom: 2rem;
   }
   main .third img {
     width: 95%;
