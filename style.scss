@@ -1001,7 +1001,7 @@ main{
       margin-top: 2rem;
       width: 100%;
       h1{
-        margin-right: 3rem;
+        margin-right: 2rem;
       }
     }
     .second{
@@ -1027,7 +1027,7 @@ main{
       margin-left: 0;
       padding-bottom: 2rem;
       img{
-        width: 95%;
+        width: 97%;
       }
       h3{
         font-size: clamp(7rem, 13vw, 10rem);
@@ -1042,6 +1042,27 @@ main{
         .box1, .box2{
           width: 100%;
         }
+        .box1{
+          border: none;
+          h1{
+            font-size: 17vw;
+            text-align: center;
+          }
+          h3{
+            font-size: 12vw;
+          }
+          p{
+            font-size: 5vw;
+          }
+        }
+        .box2{
+          h1{
+            font-size: 15vw;
+          }
+          p{
+            font-size: 5vw;
+          }
+        }
       }
       &>img{
         display: none;
@@ -1052,6 +1073,29 @@ main{
     }
     .seventh{
       display: none;
+    }
+    .eight{
+      .box1{
+        flex-direction: column;
+        // height: 10%;
+        .text{
+          width: 100%;
+          aspect-ratio: 0;
+          img{
+            display: none;
+          }
+        }
+        .img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .box2{
+        display: none;
+      }
+      .box3{
+        display: none;
+      }
     }
   }
 }
