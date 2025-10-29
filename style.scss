@@ -578,6 +578,7 @@ main{
   .eight{
     grid-area: eight;
     margin-top: 3rem;
+    // height: 100%;
     .box1{
       display: flex;
       flex-direction: row;
@@ -1075,26 +1076,68 @@ main{
       display: none;
     }
     .eight{
+      height: 100%;
       .box1{
-        flex-direction: column;
-        // height: 10%;
+        flex-direction: column-reverse;
+        height: 55%;
+        gap: 2rem;
         .text{
           width: 100%;
           aspect-ratio: 0;
           img{
             display: none;
           }
+          h1{
+            font-size: 35vw;
+            span{
+              margin: 0;
+            }
+          }
         }
         .img{
           height: 100%;
           width: 100%;
+          img{
+            height: 100%;
+          }
         }
       }
       .box2{
-        display: none;
+        height: 18%;
+        img{
+          display: none;
+        }
+        h1{
+          font-size: 42vw;
+        }
       }
       .box3{
+        height: 25%;
+        flex-direction: column-reverse;
+        .info{
+          h3{
+            font-size: 6vw;
+          }
+          h1{
+            display: none;
+          }
+          p{
+            display: none;
+          }
+        }
+        h1{
+          font-size: 40vw;
+        }
+      }
+    }
+    .nineth{
+      height: 50vw;
+      position: relative;
+      .box1, .box2{
         display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
       }
     }
   }

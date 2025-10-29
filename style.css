@@ -1018,8 +1018,13 @@ main .footer ul li {
   main .seventh {
     display: none;
   }
+  main .eight {
+    height: 100%;
+  }
   main .eight .box1 {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    height: 55%;
+    gap: 2rem;
   }
   main .eight .box1 .text {
     width: 100%;
@@ -1028,14 +1033,52 @@ main .footer ul li {
   main .eight .box1 .text img {
     display: none;
   }
+  main .eight .box1 .text h1 {
+    font-size: 35vw;
+  }
+  main .eight .box1 .text h1 span {
+    margin: 0;
+  }
   main .eight .box1 .img {
     height: 100%;
     width: 100%;
   }
+  main .eight .box1 .img img {
+    height: 100%;
+  }
   main .eight .box2 {
+    height: 18%;
+  }
+  main .eight .box2 img {
     display: none;
   }
+  main .eight .box2 h1 {
+    font-size: 42vw;
+  }
   main .eight .box3 {
+    height: 25%;
+    flex-direction: column-reverse;
+  }
+  main .eight .box3 .info h3 {
+    font-size: 6vw;
+  }
+  main .eight .box3 .info h1 {
     display: none;
+  }
+  main .eight .box3 .info p {
+    display: none;
+  }
+  main .eight .box3 h1 {
+    font-size: 40vw;
+  }
+  main .nineth {
+    height: 50vw;
+    position: relative;
+  }
+  main .nineth .box1, main .nineth .box2 {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
   }
 }/*# sourceMappingURL=style.css.map */
