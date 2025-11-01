@@ -1072,13 +1072,34 @@ main .footer ul li {
     font-size: 40vw;
   }
   main .nineth {
-    height: 50vw;
-    position: relative;
+    margin-top: 7rem;
+    height: 110vw;
   }
   main .nineth .box1, main .nineth .box2 {
     display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+  }
+  main .nineth .box3, main .nineth .box4 {
+    left: 0;
+    width: 100%;
+  }
+  main .nineth .box3 p, main .nineth .box4 p {
+    font-size: 3.5rem;
+  }
+  main .nineth .box3 .info h1, main .nineth .box4 .info h1 {
+    font-size: 5rem;
+  }
+  main .nineth .box3 .info p, main .nineth .box4 .info p {
+    font-size: 4rem;
+  }
+  main .nineth .box4 {
+    top: 0;
+    height: 45%;
+  }
+  main .nineth .box3 {
+    top: 50%;
+    height: 45%;
+  }
+  main .nineth .box3:hover ~ .box4 {
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1131,13 +1131,38 @@ main{
       }
     }
     .nineth{
-      height: 50vw;
-      position: relative;
+      margin-top: 7rem;
+      height: 110vw;
+      // position: relative;
       .box1, .box2{
         display: none;
-        position: absolute;
-        top: 0%;
-        left: 0%;
+      }
+      .box3, .box4{
+        left: 0;
+        width: 100%;
+        p{
+          font-size:3.5rem;
+        }
+        .info{
+          h1{
+            font-size:5rem
+          }
+          p{
+            font-size:4rem;
+          }
+        }
+      }
+      .box4{
+        top: 0;
+        height: 45%;
+        
+      }
+      .box3{
+        top: 50%;
+        height: 45%;
+        &:hover ~ .box4{
+          left: 0;
+        }
       }
     }
   }
