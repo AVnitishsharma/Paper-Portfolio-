@@ -1165,5 +1165,33 @@ main{
         }
       }
     }
+    .works2{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .fistwork{
+        display: none;
+      }
+      .allworks{
+        border: none;
+        gap: 3rem;
+        h1{
+          font-size: 21vw;
+          svg{
+            display: none;
+          }
+        }
+        h4{
+          font-size: 7vw;
+          line-height: 1;
+        }
+        p{
+          font-size: 5vw;
+          span{
+            font-style: 5vw;
+          }
+        }
+      }
+    }
   }
 }

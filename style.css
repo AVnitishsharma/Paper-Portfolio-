@@ -1102,4 +1102,32 @@ main .footer ul li {
   main .nineth .box3:hover ~ .box4 {
     left: 0;
   }
+  main .works2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .works2 .fistwork {
+    display: none;
+  }
+  main .works2 .allworks {
+    border: none;
+    gap: 3rem;
+  }
+  main .works2 .allworks h1 {
+    font-size: 21vw;
+  }
+  main .works2 .allworks h1 svg {
+    display: none;
+  }
+  main .works2 .allworks h4 {
+    font-size: 7vw;
+    line-height: 1;
+  }
+  main .works2 .allworks p {
+    font-size: 5vw;
+  }
+  main .works2 .allworks p span {
+    font-style: 5vw;
+  }
 }/*# sourceMappingURL=style.css.map */
