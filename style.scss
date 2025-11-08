@@ -1077,6 +1077,7 @@ main{
     }
     .eight{
       height: 100%;
+      margin-right: 2rem;
       .box1{
         flex-direction: column-reverse;
         height: 55%;
@@ -1132,8 +1133,8 @@ main{
     }
     .nineth{
       margin-top: 7rem;
+      margin-right: 2rem;
       height: 110vw;
-      // position: relative;
       .box1, .box2{
         display: none;
       }
@@ -1141,21 +1142,20 @@ main{
         left: 0;
         width: 100%;
         p{
-          font-size:3.5rem;
+          font-size:5vw;
         }
         .info{
           h1{
-            font-size:5rem
+            font-size:7vw;
           }
           p{
-            font-size:4rem;
+            font-size:6vw;
           }
         }
       }
       .box4{
         top: 0;
         height: 45%;
-        
       }
       .box3{
         top: 50%;
@@ -1169,6 +1169,7 @@ main{
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      margin-right: 2rem;
       .fistwork{
         display: none;
       }

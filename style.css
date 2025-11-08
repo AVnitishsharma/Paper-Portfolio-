@@ -1020,6 +1020,7 @@ main .footer ul li {
   }
   main .eight {
     height: 100%;
+    margin-right: 2rem;
   }
   main .eight .box1 {
     flex-direction: column-reverse;
@@ -1073,6 +1074,7 @@ main .footer ul li {
   }
   main .nineth {
     margin-top: 7rem;
+    margin-right: 2rem;
     height: 110vw;
   }
   main .nineth .box1, main .nineth .box2 {
@@ -1083,13 +1085,13 @@ main .footer ul li {
     width: 100%;
   }
   main .nineth .box3 p, main .nineth .box4 p {
-    font-size: 3.5rem;
+    font-size: 5vw;
   }
   main .nineth .box3 .info h1, main .nineth .box4 .info h1 {
-    font-size: 5rem;
+    font-size: 7vw;
   }
   main .nineth .box3 .info p, main .nineth .box4 .info p {
-    font-size: 4rem;
+    font-size: 6vw;
   }
   main .nineth .box4 {
     top: 0;
@@ -1106,6 +1108,7 @@ main .footer ul li {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-right: 2rem;
   }
   main .works2 .fistwork {
     display: none;
